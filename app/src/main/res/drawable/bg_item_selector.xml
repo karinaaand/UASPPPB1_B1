@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pearly_gray" />
+    <corners android:radius="12dp" />
+    <stroke android:color="@color/black" android:width="2dp" />
+    <padding
+        android:left="12dp"
+        android:right="12dp"
+        android:top="8dp"
+        android:bottom="8dp"/>
+    <!-- Tambahkan efek shadow/elevation -->
+    <elevation android:value="4dp"/>
+</shape>
+

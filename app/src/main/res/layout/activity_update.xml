@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16sp"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.UpdateActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tv_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Motor"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp" />
+
+    <!-- Motor Name Input -->
+    <EditText
+        android:id="@+id/et_motor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name Motor"
+        android:padding="12dp"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/tv_update_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Motor Type Input -->
+    <EditText
+        android:id="@+id/et_motor_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Type Motor"
+        android:padding="12dp"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/et_motor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Motor Plate Input -->
+    <EditText
+        android:id="@+id/et_motor_plat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Plat Motor"
+        android:padding="12dp"
+        android:inputType="text"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/et_motor_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/et_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="URL Addres Image Motor"
+        android:padding="12dp"
+        android:inputType="text"
+        android:background="@drawable/background_edittext"
+        app:layout_constraintTop_toBottomOf="@id/et_motor_plat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Add Motor Button -->
+    <Button
+        android:id="@+id/btn_add_motor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update Motor"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/et_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

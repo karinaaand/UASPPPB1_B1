@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_item_selector"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+
+    <ImageView
+        android:id="@+id/img_motor"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@drawable/ic_launcher_background" />
+
+    <!-- Nama Motor -->
+    <TextView
+        android:id="@+id/tvMotorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name Motor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="4dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- Plat Motor -->
+    <TextView
+        android:id="@+id/tvMotorPlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plat Motor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingBottom="12dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+
+
+    <!-- Tombol Edit dan Delete -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <!-- Button Edit -->
+        <Button
+            android:id="@+id/btnBorrowMotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrow"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_item_selector"
+            android:layout_marginEnd="8dp"
+            android:minWidth="96dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Button Delete -->
+        <Button
+            android:id="@+id/btnFinishMotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_item_selector"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

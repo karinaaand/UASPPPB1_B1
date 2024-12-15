@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.BorrowFragment"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tv_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor Available"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Divider Line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_borrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_motor_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/recycler_background"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnLogout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:padding="12dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/dark_gray"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/rv_motor_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
